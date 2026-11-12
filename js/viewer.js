@@ -75,7 +75,7 @@ function mul(a,b){var o=new Float32Array(16);for(var i=0;i<4;i++)for(var j=0;j<4
 function nm(v){var l=Math.sqrt(v[0]*v[0]+v[1]*v[1]+v[2]*v[2]);return[v[0]/l,v[1]/l,v[2]/l]}
 function cr(a,b){return[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]]}
 function dt(a,b){return a[0]*b[0]+a[1]*b[1]+a[2]*b[2]}
-function persp(fv,as,ne,fa){var t=1/Math.tan(fv/2),o=new Float32Array(16);o[0]=t/as;o[5]=t;o[10]=(fa+ne)/(ne-fa);o[11]=-1;o[14]=2*fa*ne/(ne-fa);return o}
+function persp(fv,as,ne,fa){var t=1/Math.tan(fv/2),o=new Float32Array(16);o[0]=t/as;o[5]=t;o[10]=(fa+ne)/(ne-fa);o[9]=-.14;o[11]=-1;o[14]=2*fa*ne/(ne-fa);return o}
 function look(e){var z=nm(e),x=nm(cr([0,1,0],z)),y=cr(z,x);return Float32Array.of(x[0],y[0],z[0],0,x[1],y[1],z[1],0,x[2],y[2],z[2],0,-dt(x,e),-dt(y,e),-dt(z,e),1)}
 /* Steuerung: nur drehbar, wenn Finger oder Cursor direkt das Objekt berühren */
 var th=.8,ph=1.05,zoom=1,vth=0,auto=true,drag=false,lx=0,ly=0,d0=1,px0=new Uint8Array(4);

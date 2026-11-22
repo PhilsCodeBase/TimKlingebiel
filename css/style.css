@@ -166,4 +166,4 @@ x-l{display:inline}
 
 .skip{position:absolute;left:12px;top:-80px;z-index:100;background:var(--red);color:#fff;padding:.7rem 1.1rem;border-radius:12px;font-weight:500}.skip:focus{top:calc(8px + env(safe-area-inset-top,0px));color:#fff}
 main:focus{outline:none}
-.ft-a11y{margin:1rem 0 0;font-size:.8em;max-width:60ch}.ft-a11y a{text-decoration:underline}
+.legal .a11y-note{font-size:.8rem}

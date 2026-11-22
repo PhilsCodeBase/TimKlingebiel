@@ -166,4 +166,3 @@ x-l{display:inline}
 
 .skip{position:absolute;left:12px;top:-80px;z-index:100;background:var(--red);color:#fff;padding:.7rem 1.1rem;border-radius:12px;font-weight:500}.skip:focus{top:calc(8px + env(safe-area-inset-top,0px));color:#fff}
 main:focus{outline:none}
-.legal .a11y-note{font-size:.8rem}
